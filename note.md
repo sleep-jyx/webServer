@@ -702,7 +702,7 @@ common gateway interface 通用网关接口：web 服务器主机提供信息服
 //使用cgi处理post请求
 void http_conn::postRespond()
 {
-    if (fork() == 0)
+    if (fork() == 0)//fork()一个进程去处理
     {
         dup2(m_sockfd, STDOUT_FILENO);        //将标准输出重定向到客户连接socket上
         execl(m_real_file, m_post_data, NULL);//替换进程映像
