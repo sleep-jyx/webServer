@@ -1,4 +1,4 @@
-##一、运行说明
+## 一、运行说明
 
 1. 进入项目文件
    cd project
@@ -32,7 +32,7 @@ INSERT INTO user(username, passwd) VALUES('admin', '123456');
 
 9. 浏览器访问 url 127.0.0.1:8088/log.html
 
-##二、演示
+## 二、演示
 
 ##### 登录页
 
@@ -52,10 +52,10 @@ INSERT INTO user(username, passwd) VALUES('admin', '123456');
 
 ## 三、轻量级 Linux web 服务器
 
-使用半同步/半反应堆线程池处理 http 连接
-使用边沿触发模式轮询 epoll 内核事件表
-采用 Reactor 并发模型
-使用主从状态机解析 HTTP 请求报文，支持解析 GET 和 POST 请求
-采用 mmap()映射文件、writev()集中写，可以实现对图片的访问
-使用 mysql 实现 web 端用户登录验证功能
-使用 CGI 处理 POST 请求，生成动态内容
+- 使用半同步/半反应堆线程池处理 http 连接
+- 使用边沿触发模式轮询 epoll 内核事件表
+- 采用 Reactor 并发模型
+- 使用主从状态机解析 HTTP 请求报文，支持解析 GET 和 POST 请求
+- 采用 mmap()映射文件、writev()集中写，可以实现对图片的访问
+- 使用 mysql 实现 web 端用户登录验证功能
+- 使用 CGI 处理 POST 请求，生成动态内容
